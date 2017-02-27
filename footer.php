@@ -132,7 +132,7 @@
 </script>
 <!-- </script> -->
 <?php wp_footer(); ?>
-<script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fd46e1d2edd7fe75544a0b7ef2e41b730' type='text/javascript'%3E%3C/script%3E")) </script>
+<script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa479a7c44ec78f620891acecacc021ad' type='text/javascript'%3E%3C/script%3E")) </script>
 <!-- Piwik -->
 <script type="text/javascript">
   var _paq = _paq || [];
