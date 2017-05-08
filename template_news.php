@@ -21,16 +21,16 @@ get_header(); ?>
                   <!-- Media -->
                   <div class="media">
                     <div class="media-left">
-                      <a href="<?php bloginfo('home'); ?>/blog_single_post?id=<?php echo $post->ID; ?>" class="thumb thumb--mod">
+                      <a href="<?php echo $HOME; ?>/blog_single_post?id=<?php echo $post->ID; ?>" class="thumb thumb--mod">
                         <?php // the_post_thumbnail(); ?>
                         <img data-original="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" width="270" height="135" alt="">
                         <span class="thumb__overlay"></span>
                       </a>
                     </div>
                     <div class="media-body inset-5">
-                      <h5><a href="<?php bloginfo('home'); ?>/blog_single_post?id=<?php echo $post->ID; ?>"><?php the_title(); ?></a></h5>
+                      <h5><a href="<?php echo $HOME; ?>/blog_single_post?id=<?php echo $post->ID; ?>"><?php the_title(); ?></a></h5>
                       <p><?php echo get_post_meta($post->ID,'简介',true); ?></p>
-                      <a href="<?php bloginfo('home'); ?>/blog_single_post?id=<?php echo $post->ID; ?>" class="btn btn-sm btn-danger">了解更多</a>
+                      <a href="<?php echo $HOME; ?>/blog_single_post?id=<?php echo $post->ID; ?>" class="btn btn-sm btn-danger">了解更多</a>
                     </div>
                   </div>
                   <!-- END Media -->

@@ -16,14 +16,14 @@
   =========================================================-->
   <footer class="pcShow">
     <div class="container container-wide">
-      <a href="<?php bloginfo('home'); ?>/">
+      <a href="<?php echo $HOME; ?>/">
         <img data-original="<?php bloginfo('template_url'); ?>/images/logo_color.png" />
       </a>
       <div class="footBanner">
-        <a href="<?php bloginfo('home'); ?>/service/">服务体系</a>|
+        <a href="<?php echo $HOME; ?>/service/">服务体系</a>|
         <a href="javascript://">优势资源</a>|
-        <a href="<?php bloginfo('home'); ?>/gallery?cat=6">成功案例</a>|
-        <a href="<?php bloginfo('home'); ?>/about/">关于我们</a>
+        <a href="<?php echo $HOME; ?>/gallery?cat=6">成功案例</a>|
+        <a href="<?php echo $HOME; ?>/about/">关于我们</a>
       </div>
 
       <!-- Address -->
@@ -61,7 +61,7 @@
   </footer>
   <footer class="moShow">
     <div class="container container-wide">
-      <a href="<?php bloginfo('home'); ?>/">
+      <a href="<?php echo $HOME; ?>/">
         <img data-original="<?php bloginfo('template_url'); ?>/images/logo_color.png" />
       </a>
       <!-- Address -->
@@ -93,7 +93,7 @@
     </div>
   </footer>
   <div id="footerBar" class="moShow">
-    <a href="<?php bloginfo('home'); ?>/solution/"><img src="<?php bloginfo('template_url'); ?>/images/footerBar1.png" /></a>
+    <a href="<?php echo $HOME; ?>/solution/"><img src="<?php bloginfo('template_url'); ?>/images/footerBar1.png" /></a>
     <a href="http://p.qiao.baidu.com//im/index?siteid=3092275&ucid=6228450" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/footerBar2.png" /></a>
     <a href="tel:4006226975"><img src="<?php bloginfo('template_url'); ?>/images/footerBar3.png" /></a>
   </div>

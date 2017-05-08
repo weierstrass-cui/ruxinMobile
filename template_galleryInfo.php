@@ -30,16 +30,16 @@ get_header(); ?>
             if( count($post_list) ){
                 if( $post_index == 0 ){
             ?>
-                <a class="nextPost" href="<?php bloginfo('home'); ?>/galleryInfo?<?php echo 'cat='.$post_list[$post_index+1]->cid.'&post='.$post_list[$post_index+1]->id ?>">下一篇</a>
+                <a class="nextPost" href="<?php echo $HOME; ?>/galleryInfo?<?php echo 'cat='.$post_list[$post_index+1]->cid.'&post='.$post_list[$post_index+1]->id ?>">下一篇</a>
             <?php
                 }elseif ( $post_index == (count($post_list) - 1) ) {
             ?>
-                <a class="lastPost" href="<?php bloginfo('home'); ?>/galleryInfo?<?php echo 'cat='.$post_list[$post_index-1]->cid.'&post='.$post_list[$post_index-1]->id; ?>">上一篇</a>
+                <a class="lastPost" href="<?php echo $HOME; ?>/galleryInfo?<?php echo 'cat='.$post_list[$post_index-1]->cid.'&post='.$post_list[$post_index-1]->id; ?>">上一篇</a>
             <?php    
                 }else{
             ?>
-                <a class="lastPost" href="<?php bloginfo('home'); ?>/galleryInfo?<?php echo 'cat='.$post_list[$post_index-1]->cid.'&post='.$post_list[$post_index-1]->id ?>">上一篇</a>
-                <a class="nextPost" href="<?php bloginfo('home'); ?>/galleryInfo?<?php echo 'cat='.$post_list[$post_index+1]->cid.'&post='.$post_list[$post_index+1]->id ?>">下一篇</a>
+                <a class="lastPost" href="<?php echo $HOME; ?>/galleryInfo?<?php echo 'cat='.$post_list[$post_index-1]->cid.'&post='.$post_list[$post_index-1]->id ?>">上一篇</a>
+                <a class="nextPost" href="<?php echo $HOME; ?>/galleryInfo?<?php echo 'cat='.$post_list[$post_index+1]->cid.'&post='.$post_list[$post_index+1]->id ?>">下一篇</a>
             <?php
                 }
             }
@@ -64,7 +64,7 @@ get_header(); ?>
                 if( $('#thePost').find('img').length ){
                     $('#thePost').find('img').each(function(){
                         var src = $(this).attr('src').replace(/^\/ruxin2017/,'');
-                        var div = $('<div class="swiper-slide" data-slide-bg="<?php bloginfo('home'); ?>' + src + '"></div>').appendTo('#theImagesForMob .swiper-wrapper');
+                        var div = $('<div class="swiper-slide" data-slide-bg="<?php echo $HOME; ?>' + src + '"></div>').appendTo('#theImagesForMob .swiper-wrapper');
                         $(this).remove();
                     });
                 }else{

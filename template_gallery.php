@@ -18,7 +18,7 @@ get_header(); ?>
                     <div class="shotTitle"><?php echo get_post_meta($post->ID,'短标题',true); ?></div>
                     <h3><?php the_title(); ?></h3>
                     <div class="time"><?php echo get_post_meta($post->ID,'时间',true); ?></div>
-                    <a href="<?php bloginfo('home'); ?>/galleryInfo?<?php echo 'post='.$post->ID ?>"><span>了解详情</span></a>
+                    <a href="<?php echo $HOME; ?>/galleryInfo?<?php echo 'post='.$post->ID ?>"><span>了解详情</span></a>
                 </div>
             </div>
           <?php endforeach; ?>
@@ -26,12 +26,12 @@ get_header(); ?>
         <a href="javascript://" class="mo-changeCategory"></a>
         <div class="mo-categroy-list">
             <ul>
-                <li <?php if($_GET['mocat'] == ''){ echo ' class="active"';} ?>><a href="<?php bloginfo('home'); ?>/gallery">最新</a></li>
+                <li <?php if($_GET['mocat'] == ''){ echo ' class="active"';} ?>><a href="<?php echo $HOME; ?>/gallery">最新</a></li>
                 <?php  $categorys = getchild(4); ?>
                 <?php if( $categorys ): ?>
                   <?php foreach( $categorys as $index => $item ): ?>
                     <li <?php if($_GET['mocat'] == $item->term_id){ echo ' class="active"';} ?>>
-                        <a href="<?php bloginfo('home'); ?>/gallery?<?php echo 'mocat='.$item->term_id; ?>"><?php echo $item->cat_name ?></a>
+                        <a href="<?php echo $HOME; ?>/gallery?<?php echo 'mocat='.$item->term_id; ?>"><?php echo $item->cat_name ?></a>
                     </li>
                   <?php endforeach; ?>
                 <?php endif ?>
