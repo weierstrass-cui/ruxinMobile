@@ -64,7 +64,7 @@
 		var __tpl__ = '<?php bloginfo('template_url'); ?>';
 		var template_url = '<?php bloginfo("template_directory"); ?>';
 	</script>
-	<?php __HOME__ = 'http://m.ruxinwenhua.com' ?>
+	<?php $HOME = 'http://m.ruxinwenhua.com'; ?>
 	<?php wp_head(); ?>
 </head>
 
@@ -124,24 +124,24 @@
 	        <!-- Navbar Brand -->
 	        <div class="navbar-header center-xs visible-sm-inline-block-skin">
 	          <div class="navbar-brand">
-	            <a href="<?php echo __HOME__; ?>/"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" /></a>
+	            <a href="<?php echo $HOME; ?>/"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" /></a>
 	          </div>
 	        </div>
 	        <!-- END Navbar Brand -->
 	        <!-- Navbar Nav -->
 	        <ul class="navbar-nav sf-menu navbar-right" data-type="navbar">
 	          <li class="active">
-	            <a href="<?php echo __HOME__; ?>/">首页</a>
+	            <a href="<?php echo $HOME; ?>/">首页</a>
 	          </li>
 	          <!-- <li class="dropdown"> -->
 	          <li>
-	            <a href="<?php echo __HOME__; ?>/service/">服务体系</a>
+	            <a href="<?php echo $HOME; ?>/service/">服务体系</a>
 	          </li>
 	          <li>
-	            <a href="<?php echo __HOME__; ?>/gallery?cat=6">成功案例</a>
+	            <a href="<?php echo $HOME; ?>/gallery?cat=6">成功案例</a>
 	          </li>
 	          <li>
-	            <a href="<?php echo __HOME__; ?>/about/">关于我们</a>
+	            <a href="<?php echo $HOME; ?>/about/">关于我们</a>
 	          </li>
 	          <li>
 	            <a href="#contactUs">联系我们</a>
@@ -166,24 +166,24 @@
             <!-- Navbar Brand -->
             <div class="navbar-header center-xs">
               <div class="navbar-brand">
-                <a href="<?php echo __HOME__; ?>/"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" /></a>
+                <a href="<?php echo $HOME; ?>/"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" /></a>
               </div>
             </div>
             <!-- END Navbar Brand -->
             <!-- Navbar Nav -->
             <ul class="navbar-nav sf-menu navbar-right" data-type="navbar">
               <li>
-	            <a href="<?php echo __HOME__; ?>/">首页</a>
+	            <a href="<?php echo $HOME; ?>/">首页</a>
 	          </li>
 	          <!-- <li class="dropdown"> -->
 	          <li<?php if( is_page(4) ) echo ' class="active"'; ?>>
-	            <a href="<?php echo __HOME__; ?>/service/">服务体系</a>
+	            <a href="<?php echo $HOME; ?>/service/">服务体系</a>
 	          </li>
 	          <li<?php if( is_page(6) ) echo ' class="active"'; ?>>
-	            <a href="<?php echo __HOME__; ?>/gallery?cat=6">成功案例</a>
+	            <a href="<?php echo $HOME; ?>/gallery?cat=6">成功案例</a>
 	          </li>
 	          <li<?php if( is_page(8) ) echo ' class="active"'; ?>>
-	            <a href="<?php echo __HOME__; ?>/about/">关于我们</a>
+	            <a href="<?php echo $HOME; ?>/about/">关于我们</a>
 	          </li>
 	          <li>
 	            <a href="#contactUs">联系我们</a>
