@@ -112,7 +112,6 @@
      });
     $('.rd-mobilemenu_ul').find('li:last').remove();
     $('.rd-mobilemenu_ul').find('li:last').remove();
-    $('.rd-mobilemenu_ul').find('li').eq(1).remove();
   });
 </script>
 <script type="text/javascript">

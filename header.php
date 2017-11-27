@@ -138,7 +138,7 @@
 	            <a href="<?php echo $HOME; ?>/service/">服务体系</a>
 	          </li>
 	          <li>
-	            <a href="<?php echo $HOME; ?>/gallery?cat=6">成功案例</a>
+	            <a href="<?php echo $HOME; ?>/gallery?cat=20">成功案例</a>
 	          </li>
 	          <li>
 	            <a href="<?php echo $HOME; ?>/about/">关于我们</a>
@@ -180,7 +180,7 @@
 	            <a href="<?php echo $HOME; ?>/service/">服务体系</a>
 	          </li>
 	          <li<?php if( is_page(6) ) echo ' class="active"'; ?>>
-	            <a href="<?php echo $HOME; ?>/gallery?cat=6">成功案例</a>
+	            <a href="<?php echo $HOME; ?>/gallery?cat=20">成功案例</a>
 	          </li>
 	          <li<?php if( is_page(8) ) echo ' class="active"'; ?>>
 	            <a href="<?php echo $HOME; ?>/about/">关于我们</a>
