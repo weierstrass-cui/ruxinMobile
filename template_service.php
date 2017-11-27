@@ -37,7 +37,7 @@ get_header(); ?>
             <img data-original="<?php bloginfo('template_url'); ?>/images/serviceList1.jpg" />
             <div class="serviceInfo">
               <div class="serviceInfoTitle"><h3><?php echo $post->post_title; ?></h3></div>
-              <p><?php echo get_post_meta($post->ID,'简介',true); ?></p>
+              <p class="serviceInfoP"><?php echo get_post_meta($post->ID,'简介',true); ?></p>
             </div>
           </a>
           <?php $post = get_post(42); ?>
@@ -45,7 +45,7 @@ get_header(); ?>
             <img data-original="<?php bloginfo('template_url'); ?>/images/serviceList2.jpg" />
             <div class="serviceInfo">
               <div class="serviceInfoTitle"><h3><?php echo $post->post_title; ?></h3></div>
-              <p><?php echo get_post_meta($post->ID,'简介',true); ?></p>
+              <p class="serviceInfoP"><?php echo get_post_meta($post->ID,'简介',true); ?></p>
             </div>
           </a>
           <?php $post = get_post(39); ?>
@@ -53,7 +53,7 @@ get_header(); ?>
             <img data-original="<?php bloginfo('template_url'); ?>/images/serviceList3.jpg" />
             <div class="serviceInfo">
               <div class="serviceInfoTitle"><h3><?php echo $post->post_title; ?></h3></div>
-              <p><?php echo get_post_meta($post->ID,'简介',true); ?></p>
+              <p class="serviceInfoP"><?php echo get_post_meta($post->ID,'简介',true); ?></p>
             </div>
           </a>
           <?php $post = get_post(37); ?>
@@ -61,7 +61,7 @@ get_header(); ?>
             <img data-original="<?php bloginfo('template_url'); ?>/images/serviceList4.jpg" />
             <div class="serviceInfo">
               <div class="serviceInfoTitle"><h3><?php echo $post->post_title; ?></h3></div>
-              <p><?php echo get_post_meta($post->ID,'简介',true); ?></p>
+              <p class="serviceInfoP"><?php echo get_post_meta($post->ID,'简介',true); ?></p>
             </div>
           </a>
           <?php $post = get_post(35); ?>
@@ -69,7 +69,7 @@ get_header(); ?>
             <img data-original="<?php bloginfo('template_url'); ?>/images/serviceList5.jpg" />
             <div class="serviceInfo">
               <div class="serviceInfoTitle"><h3><?php echo $post->post_title; ?></h3></div>
-              <p><?php echo get_post_meta($post->ID,'简介',true); ?></p>
+              <p class="serviceInfoP"><?php echo get_post_meta($post->ID,'简介',true); ?></p>
             </div>
           </a>
           <?php $post = get_post(27); ?>
@@ -77,68 +77,15 @@ get_header(); ?>
             <img data-original="<?php bloginfo('template_url'); ?>/images/serviceList6.jpg" />
             <div class="serviceInfo">
               <div class="serviceInfoTitle"><h3><?php echo $post->post_title; ?></h3></div>
-              <p><?php echo get_post_meta($post->ID,'简介',true); ?></p>
+              <p class="serviceInfoP"><?php echo get_post_meta($post->ID,'简介',true); ?></p>
             </div>
           </a>
         </div>
       </div>
     </section>
+    <style type="text/css">
+      .serviceListBox:hover .serviceInfoTitle{display:none !important;}
+      .serviceListBox:hover .serviceInfoP{display:block !important;line-height:1.5rem;}
+    </style>
     <!-- END Wedding -->
-    <img data-original="<?php bloginfo('template_url'); ?>/images/gezi.jpg" />
-    <div class="pc-solution pcShow">
-        <form method="post" action="#" onsubmit="return false;">
-            <h3>免费请专家帮您定制策划营销方案，精准定位校园市场</h3>
-            <div class="pc-solution-main">
-                <div class="form">
-                    <ul>
-                        <li class="">立即预约，请专家免费提供方案</li>
-                        <li class="require">
-                            <label for="name">姓 名</label>
-                            <input type="text" name="author" class="text" id="name" />
-                        </li>
-                        <li class="require">
-                            <label for="phone">手 机</label>
-                            <input type="text" name="phone" class="text" id="phone" />
-                        </li>
-                        <li class="require">
-                            <label for="company">公 司</label>
-                            <input type="text" name="company" class="text" id="company" />
-                        </li>
-                        <li>
-                            <label>备 注</label>
-                            <textarea name="message"></textarea>
-                        </li>
-                    </ul>
-                </div>
-                <div class="solutionList">
-                    <div class="recorde">最新申请<span><?php echo get_post_meta('1','最新人数',true); ?></span>人 累计已有<span><?php echo get_post_meta('1','累计人数',true); ?></span>位索取方案</div>
-                    <div class="pc-solutionSlider" style="height: 182px;overflow: hidden;">
-                      <ul>
-                        <li>郭** 133****8787 5分钟前</li>
-                        <li>宋** 135****7982 6分钟前</li>
-                        <li>王** 134****9082 13分钟前</li>
-                        <li>李** 137****4988 36分钟前</li>
-                        <li>张** 139****6721 40分钟前</li>
-                        <li>黄** 136****9582 52分钟前</li>
-                        <li>钱** 139****4781 1小时前</li>
-                        <li>朱** 138****9313 1小时前</li>
-                        <li>马** 132****4482 1小时前</li>
-                        <li>沈** 137****9121 2小时前</li>
-                        <li>张** 130****9303 2小时前</li>
-                        <li>毛** 136****9654 3小时前</li>
-                      </ul>
-                    </div>
-                    <div class="pc-solution-phone">
-                        专家咨询热线<br />400-622-6975
-                    </div>
-                </div>
-            </div>
-            <div class="btns">
-                <input type="hidden" name="comment_post_ID" value="1">
-                <input type="hidden" name="comment_parent" value="0">
-                <input type="button" class="submit" id="submit" value="提交" />
-                <input type="reset" class="reset" value="重置" />
-            </div>
-        </form>
-    </div>
 <?php get_footer(); ?>
