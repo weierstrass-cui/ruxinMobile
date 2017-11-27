@@ -19,8 +19,9 @@ get_header(); ?>
     <section class="mo-dark mo-wideBox moShow">
       <!-- <a href="#contacts" data-waypoint-to="#contacts" class="locate fa-map-marker"><span>找到我们</span></a> -->
       <div class="well-1 container container-wide">
-        <h1>平 台 资 源</h1>
-        <div class="divider divider-default white">全面渗透大学生市场、多维度传播、<br />全方位曝光，实现强力转化</div>
+        <h1>年均接触年轻派人群</h1>
+        <div class="divider divider-default white" style="width:100%;font-size:26px;margin-top:2rem;">线下20000+，线上6000000+</div>
+        <div class="divider divider-default white" style="width:100%;">全面渗透大学生市场、多维度传播、<br />全方位曝光，实现强力转化</div>
         <!-- Owl Carousel -->
         <div class="mo-owl-carousel">
           <?php $posts = get_posts("category=13&numberposts=4"); ?>
@@ -69,31 +70,34 @@ get_header(); ?>
       </div>
     </section>
     <!-- END 服务体系-->
-    <!-- 成功案例 -->
-    <section class="mo-dark mo-light-border mo-wideBox mo-gallery moShow">
+    <section class="mo-dark mo-wideBox mo-service moShow">
       <div class="container container-wide">
-        <h1 class="white">成 功 案 例</h1>
-        <div class="divider divider-light white">一对一定制服务，展现品牌最大价值，<br />满足并超越客户的期望 </div>
-        <div class="swiper-container swiper-slider">
-          <div class="swiper-wrapper">
-            <?php  $categorys = get_posts("category=4&numberposts=4"); ?>
-            <?php if( $categorys ):?>
-              <?php foreach( $categorys as $index => $post ): ?>
-                <?php if( get_post_meta($post->ID,'手机首页图',true) ){ ?>
-                  <div class="swiper-slide" data-slide-bg="<?php echo get_post_meta($post->ID,'手机首页图',true); ?>">
-                <?php }else{ ?>
-                  <div class="swiper-slide" data-slide-bg="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>">
-                <?php } ?>
-                  <span></span>
-                  <p><a href="<?php bloginfo('home'); ?>/gallery?<?php echo 'post='.$post->ID ?>">了解详情</a></p>
-                </div>
-              <?php endforeach; ?>
-            <?php endif ?>
-          </div>
+        <h1>如 心 服 务</h1>
+        <div class="row ruxinProductsBox" style="margin:3rem 0 0;width:100%;">
+            <div class="ruxinOneProduct rotateYImg" style="width:100%;height:265px;">
+              <img style="width:100px;height:100px;margin-top:1rem;" data-original="<?php bloginfo('template_url'); ?>/images/xl.png" />
+              <div class="ruxinProducts white">
+                <h5 class="white" style="font-size:1.6rem;">建立值得信赖和依赖的客户关系</h5>
+                “尊重”客户意见<br />“第一时间”相应客户需求<br />“保质、保量、按时”客户交办的各项任务
+              </div>
+            </div>
+            <div class="ruxinOneProduct rotateYImg" style="width:100%;height:265px;">
+              <img style="width:100px;height:100px;margin-top:1rem;" data-original="<?php bloginfo('template_url'); ?>/images/zy.png" />
+              <div class="ruxinProducts white">
+                <h5 class="white" style="font-size:1.6rem;">品质卓越</h5>
+                创作品质“持续稳定”<br />创作品质“经常卓越”
+              </div>
+            </div>
+            <div class="ruxinOneProduct rotateYImg" style="width:100%;height:265px;">
+              <img style="width:100px;height:100px;margin-top:1rem;" data-original="<?php bloginfo('template_url'); ?>/images/cx.png" />
+              <div class="ruxinProducts white">
+                <h5 class="white" style="font-size:1.6rem;">不断创新</h5>
+                永远不断地向客户<br />提出“具有新鲜创意的解决方案”
+              </div>
+            </div>
         </div>
       </div>
     </section>
-    <!-- END 成功案例-->
     <!-- 关于我们 -->
     <section class="mo-dark mo-light-border mo-wideBox mo-home-about moShow">
       <img data-original="<?php bloginfo('template_url'); ?>/images/aboutBanner.jpg" />
