@@ -13,7 +13,7 @@ get_header(); ?>
         } ?>
         <?php if( $posts ):?>
           <?php foreach( $posts as $index => $post ): setup_postdata( $post ); ?>
-            <div class="oneAnli" style="background:url(<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>) no-repeat;background-size:100% 100%;">
+            <div class="oneAnli" style="height:calc(100vw * 2 / 3);background:url(<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>) no-repeat;background-size:100% 100%;">
                 <div class="anliMask">
                     <div class="shotTitle"><?php echo get_post_meta($post->ID,'短标题',true); ?></div>
                     <h3><?php the_title(); ?></h3>
