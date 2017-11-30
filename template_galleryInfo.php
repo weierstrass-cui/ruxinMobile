@@ -67,6 +67,7 @@ get_header(); ?>
                         if( !/\/wp-content/.test(src) ){
                             src = '/wp-content' + src;
                         }
+                        src = 'http://www.ruxinwenhua.com/' + src;
                         var div = $('<div class="swiper-slide" data-slide-bg="<?php echo $HOME; ?>' + src + '"></div>').appendTo('#theImagesForMob .swiper-wrapper');
                         $(this).remove();
                     });
