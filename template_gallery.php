@@ -23,7 +23,7 @@ get_header(); ?>
             </div>
           <?php endforeach; ?>
         <?php endif ?>
-        <a href="javascript://" class="mo-changeCategory"></a>
+        
         <div class="mo-categroy-list">
             <ul>
                 <li <?php if($_GET['mocat'] == ''){ echo ' class="active"';} ?>><a href="<?php echo $HOME; ?>/gallery">最新</a></li>
@@ -39,12 +39,16 @@ get_header(); ?>
         </div>
         <script type="text/javascript">
             $(function(){
-                $('.mo-changeCategory').click(function(){
-                    $('.mo-categroy-list').toggle();
-                });
-                $('.mo-categroy-list').click(function(){
-                    $('.mo-categroy-list').hide();
-                });
+                if( $('.rd-mobilepanel').length ){
+                    $('.rd-mobilepanel').append('<a href="javascript://" class="mo-changeCategory"></a>');
+
+                    $('.mo-changeCategory').click(function(){
+                        $('.mo-categroy-list').toggle();
+                    });
+                    $('.mo-categroy-list').click(function(){
+                        $('.mo-categroy-list').hide();
+                    });
+                }
             });
         </script>
     </div>
