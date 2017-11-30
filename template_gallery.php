@@ -39,16 +39,23 @@ get_header(); ?>
         </div>
         <script type="text/javascript">
             $(function(){
-                if( $('.rd-mobilepanel').length ){
-                    $('.rd-mobilepanel').append('<a href="javascript://" class="mo-changeCategory"></a>');
+                var addBtn = function(){
+                    if( $('.rd-mobilepanel').length ){
+                        $('.rd-mobilepanel').append('<a href="javascript://" class="mo-changeCategory"></a>');
 
-                    $('.mo-changeCategory').click(function(){
-                        $('.mo-categroy-list').toggle();
-                    });
-                    $('.mo-categroy-list').click(function(){
-                        $('.mo-categroy-list').hide();
-                    });
+                        $('.mo-changeCategory').click(function(){
+                            $('.mo-categroy-list').toggle();
+                        });
+                        $('.mo-categroy-list').click(function(){
+                            $('.mo-categroy-list').hide();
+                        });
+                    }else{
+                        setTimeout(function(){
+                            addBtn();
+                        }, 500);
+                    }
                 }
+                addBtn();
             });
         </script>
     </div>
